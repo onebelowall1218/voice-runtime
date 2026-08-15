@@ -1,0 +1,46 @@
+# internal design docs — maintained locally, pushed to a separate private repo
+internal-docs/
+
+# agent + research context
+CLAUDE.md
+voice-agent-chatpdf.pdf
+
+# secrets
+.env
+.env.local
+*.key
+
+# session data — real interview audio/transcripts are PII, never commit
+recordings/
+sessions/
+*.wav
+*.pcm
+*.opus
+!tests/fixtures/*.wav
+
+# runtime artifacts
+logs/
+traces/
+models/
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# node
+node_modules/
+dist/
+.next/
+
+# local / editor
+.DS_Store
+.idea/
+.vscode/
+.claude/*
+.codex/*
+.gemini/*
