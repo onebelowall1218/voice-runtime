@@ -45,3 +45,5 @@ dist/
 .claude/*
 .codex/*
 .gemini/*
+
+tmp.py
